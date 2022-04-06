@@ -8,10 +8,10 @@ const Header = () => {
         <img alt="header logo" src={logo} />
       </div>
       <div className="w-96 bg-white h-px ml-8 z-auto"></div>
-      <nav className="bg-backg backdrop-opacity-10 h-12 w-8/12 ">
-        <ul className="flex justify-around align-middle mt-2 ">
-          <li className="mx-12 " >
-            <a className="font-barC h-6 text-white" href="">
+      <nav className="bg-backg backdrop-opacity-10 h-16 w-8/12 items-center ">
+        <ul className="flex justify-around align-middle mt-4 items-center">
+          <li className="mx-12 items-center" >
+            <a className="font-barC h-6 text-white " href="">
               00 HOME
             </a>
           </li>
