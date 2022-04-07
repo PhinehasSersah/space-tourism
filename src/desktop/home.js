@@ -17,7 +17,8 @@ const Home = () => {
     console.log(data)
     return (
         <>
-            <div className="flex flex-col w-screen h-screen bg-cover bg-center  " style={{ backgroundImage: `url(${backgroud})` }}
+            <div className="flex flex-col w-screen h-screen bg-cover bg-center  "
+             style={{ backgroundImage: `url(${backgroud})` }}
             >
                 <Header />
                 <div className="flex justify-between relative ">
