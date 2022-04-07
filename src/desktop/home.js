@@ -23,7 +23,7 @@ const Home = () => {
                 <div className="flex justify-between relative ">
 
                     <div className=" w-96 h-80  absolute top-96 left-32" >
-                        <p className=" uppercase text-xl font-barC tracking-wide text-white">so, you want to travel to</p><br />
+                        <p className=" uppercase text-xl font-barC tracking-widest text-white">so, you want to travel to</p><br />
                         <span className="font-bel text-8xl text-white uppercase leading-relaxed"> space</span><br />
                         <p className="text-base font-barC w-60 text-white text-justify mx-auto">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back,
                             and relax because we’ll give you a truly out of this world experience!</p>

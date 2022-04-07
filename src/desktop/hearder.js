@@ -9,23 +9,23 @@ const Header = () => {
       </div>
       <div className="w-96 bg-white h-px ml-8 z-auto"></div>
       <nav className="bg-backg backdrop-opacity-10 h-16 w-8/12 items-center ">
-        <ul className="flex justify-around align-middle mt-4 items-center">
-          <li className="mx-12 items-center" >
+        <ul className="flex justify-evenly align-middle mt-4 items-center">
+          <li className="ml-12 items-center" >
             <a className="font-barC h-6 text-white " href="">
               00 HOME
             </a>
           </li>
-          <li className="mx-12">
+          <li className="mx-1">
             <a className="font-barC text-white" href="">
               01 DESTINATION
             </a>
           </li>
-          <li className="mx-12">
+          <li className="mx-1">
             <a className="font-barC text-white" href="">
               02 CREW{" "}
             </a>
           </li>
-          <li className="mx-12">
+          <li className="mr-12">
             <a className="font-barC text-white" href="">
               03 TECHNOLOGY{" "}
             </a>
