@@ -13,7 +13,9 @@ import europa from "./image-europa.png"
 
 const Destination = () => {
 
-    const images = [moon, titan, mars, europa]
+    const images = [moon, titan, mars, europa];
+
+    const titles = ['moon', 'mars', 'europa', 'titan'];
 
 
     const [data, setData] = useState([]);
@@ -26,7 +28,7 @@ const Destination = () => {
 
 
     console.log(data)
-    
+
 
     return (
         <>
@@ -34,15 +36,30 @@ const Destination = () => {
                 style={{ backgroundImage: `url(${background})` }}
             >
                 <Header />
-                <div className="flex justify-evenly">
-                    <div className="flex flex-col">
-                        <h1 className="text-3xl font-bel mb-20" >01   pick your destination</h1>
-                        <img src ={images[0]} alt="gallaxy pictures" />
+                <div className="flex justify-evenly relative">
+                    <div className="flex flex-col w-1/3 mt-36 ">
+                        <h1 className="text-2xl font-barC text-white mb-20 uppercase tracking-widest mr-56 " > <span className="text-faded mr-3 ">01</span> pick your destination</h1>
+                        <img className="w-4/5 h-4/5 block mx-auto" src={images[0]} alt="gallaxy pictures" />
                     </div>
 
-                    <div></div>
+                    <div className="w-1/3 mt-36" >
 
-                
+                        <nav className=" h-10 w-96">
+                            <ul className="flex h-full  w-full justify-evenly mt-32">
+                                {titles && titles.map((title, index) => (
+                                    <li className="text-white uppercase  font-bel hover:border-b-2" key={index}>
+                                        <a className="" href="">
+                                            {title}
+                                        </a>
+                                    </li>
+                                ))}
+
+                            </ul>
+                        </nav>
+
+                    </div>
+
+
 
                 </div>
             </div>

@@ -8,6 +8,7 @@ module.exports = {
       lightblue: "#d0d6f9",
       white: "#ffffff",
       backg: "rgba(255, 255, 255, 0.06)",
+      faded: "rgba(255, 255, 255, 0.3)",
     
     },
     fontFamily: {
