@@ -4,6 +4,7 @@ import './App.css';
 import Home from './desktop/home.js';
 import Destination from './desktop/destination/destination.jsx';
 import Crew from './desktop/crew/crew';
+import Technology from './desktop/technology/techno';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
     {/* <Header /> */}
     {/* <Home /> */}
     {/* <Destination /> */}
-    <Crew />
+    {/* <Crew /> */}
+    <Technology />
     
     </div>
   );

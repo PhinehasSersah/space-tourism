@@ -1,6 +1,4 @@
 import { React, useState, useEffect } from "react";
-// import jsonData from "../../data.json"
-// import backgroud from "./background-home-desktop.jpg"
 import Header from "../hearder";
 import moon from "./image-moon.png"
 import background from "./background-destination-desktop.jpg"
