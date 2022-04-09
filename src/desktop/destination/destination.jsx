@@ -67,7 +67,7 @@ const Destination = () => {
                         <h1 className="font-bel text-8xl text-white mt-12 tracking-widest uppercase ">
                             {isFetched ? data.destinations[renderId].name : null}
                         </h1>
-                        <p className="text-white mt-12 w-96 font-bar text-left mx-auto">
+                        <p className="text-white mt-12 w-96 font-bar text-xl text-left mx-auto">
                             {isFetched ? data.destinations[renderId].description : null}
                         </p>
                         <div className="h-24 w-96 flex justify-start mt-12 border-t-2 mx-auto border-white">
