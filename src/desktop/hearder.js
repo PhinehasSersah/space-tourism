@@ -1,5 +1,6 @@
 import React from "react";
 import logo from '../assets/shared/logo.svg'
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -11,24 +12,24 @@ const Header = () => {
       <nav className="bg-backg backdrop-opacity-10 h-16 w-8/12 items-center ">
         <ul className="flex justify-evenly align-middle mt-4 items-center">
           <li className="ml-12 items-center" >
-            <a className="font-barC h-6 text-white " href="">
+            <NavLink to={'/'} className="font-barC h-6 text-white " href="">
               00 HOME
-            </a>
+            </NavLink>
           </li>
           <li className="mx-1">
-            <a className="font-barC text-white" href="">
+            <NavLink to={'/destination'} className="font-barC text-white" href="">
               01 DESTINATION
-            </a>
+            </NavLink>
           </li>
           <li className="mx-1">
-            <a className="font-barC text-white" href="">
+            <NavLink to={"/crew"} className="font-barC text-white" href="">
               02 CREW{" "}
-            </a>
+            </NavLink>
           </li>
           <li className="mr-12">
-            <a className="font-barC text-white" href="">
+            <NavLink to={'/technology'} className="font-barC text-white" href="">
               03 TECHNOLOGY{" "}
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>

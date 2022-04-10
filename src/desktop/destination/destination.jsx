@@ -42,13 +42,13 @@ const Destination = () => {
                 style={{ backgroundImage: `url(${background})` }}
             >
                 <Header />
-                <div className="flex justify-evenly relative">
+                <div className="flex justify-evenly ">
                     <div className="flex flex-col w-1/3 mt-36 ">
                         <h1 className="text-2xl font-barC text-white mb-20 uppercase tracking-widest mr-56 " > <span className="text-faded mr-3 font-bold">01</span> pick your destination</h1>
                         <img className="w-4/5 h-4/5 block mx-auto" src={images[renderId]} alt="gallaxy pictures" />
                     </div>
 
-                    <div className="w-1/3 mt-36 bg " >
+                    <div className="w-1/3 mt-36 h-4/5 " >
 
                         <nav className=" h-10  mx-auto">
                             <ul data-gallaxy className="flex h-full w-96 mx-auto render mt-16">
