@@ -24,7 +24,6 @@ const Crew = () => {
             })
         )
     }
-    console.log(data)
     useEffect(() => {
         fetchData();
     }, [isFetched])
