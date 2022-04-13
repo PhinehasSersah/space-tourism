@@ -16,8 +16,8 @@ const Destination = () => {
 
   const fetchData = async () => {
     await fetch("data.json").then((response) =>
-      response.json().then((data) => {
-        setData(data);
+      response.json().then((info) => {
+        setData(info);
         setIsFetched(true);
       })
     );
@@ -35,9 +35,7 @@ const Destination = () => {
     setRenderId(index);
     target.style.borderBottom = "2px solid white";
     const siblings = [...parent.children].filter((child) => child !== target);
-    siblings.forEach((child) => {
-      return (child.style.borderBottom = "none");
-    });
+    siblings.forEach((child) => child.style.borderBottom = "none");
   };
   
 
