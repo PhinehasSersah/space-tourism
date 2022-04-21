@@ -42,35 +42,34 @@ const Destination = () => {
   return (
     <>
       <div
-        className="flex flex-col w-screen h-screen bg-cover bg-center "
+        className="flex flex-col w-screen h-mob sm:h-tab  bg-cover bg-center "
         style={{ backgroundImage: `url(${background})` }}
       >
         <Header />
-        <div className="flex justify-evenly ">
-          <div className="flex flex-col w-1/3 mt-36 ">
-            <h1 className="text-2xl font-barC text-white mb-20 uppercase tracking-widest mr-56 ">
+        <div className="flex flex-col lg:justify-evenly lg:flex-row ">
+          <div className="flex flex-col lg:w-1/3 lg:mt-36 mt-40 h-40 ">
+            <h1 className=" lg:text-2xl sm:text-xl font-barC text-white lg:mb-20 uppercase tracking-widest  lg:mr-56 ">
               {" "}
               <span className="text-faded mr-3 font-bold">01</span> pick your
               destination
             </h1>
             <img
-              className="w-4/5 h-4/5 block mx-auto"
+              className="mt-8 lg:mt-0 w-44 h-44 sm:w-72 sm:h-72 lg:w-96 lg:h-96 block mx-auto "
               src={images[renderId]}
               alt="gallaxy pictures"
             />
           </div>
 
-          <div className="w-1/3 mt-36 h-4/5 ">
-            <nav className=" h-10  mx-auto">
+          <div className="lg:w-1/3 lg:mt-36 lg:h-4/5 ">
+            <nav className=" mt-24 sm:mt-56 lg:mt-0 h-7 lg:h-10  mx-auto">
               <ul
-                data-gallaxy
-                className="flex h-full w-96 mx-auto render mt-16"
+                className="flex h-full w-80 lg:w-96 mx-auto  lg:mt-16"
               >
                 {titles &&
                   titles.map((title, index) => (
                     <li
                       onClick={changeRenderId}
-                      className="text-white cursor-pointer uppercase mr-9 font-bel hover:border-b-2"
+                      className= { `${index === 0 ? 'border-b-2 border-white ' : ''}text-white cursor-pointer  uppercase px-3 lg:mx-0 lg:mr-9  font-bel` }
                       key={index}
                     >
                       {title}
@@ -78,26 +77,26 @@ const Destination = () => {
                   ))}
               </ul>
             </nav>
-            <h1 className="font-bel text-8xl text-white mt-12 tracking-widest uppercase ">
+            <h1 className="font-bel text-6xl lg:text-8xl text-white mt-10 lg:mt-12 lg:tracking-widest uppercase ">
               {isFetched ? data.destinations[renderId].name : null}
             </h1>
-            <p className="text-white mt-12 w-96 font-bar text-xl text-left mx-auto">
+            <p className="text-lightblue mt-12 w-96 font-bar text-base lg:text-xl text-left mx-auto">
               {isFetched ? data.destinations[renderId].description : null}
             </p>
-            <div className="h-24 w-96 flex justify-start mt-12 border-t-2 mx-auto border-white">
-              <div className="flex flex-col mt-6">
-                <p className="text-white uppercase text-sm font-bel text-left">
+            <div className="h-24 w-96 flex flex-col items-center sm:flex-row justify-center sm:justify-evenly lg:justify-start mt-12 border-t-2 mx-auto border-hr">
+              <div className="flex flex-col mt-32 sm:mt-6 lg:mt-6">
+                <p className="text-white uppercase text-sm font-bel lg:text-left">
                   avg. distance
                 </p>
-                <p className="text-white text-3xl font-bel uppercase text-left">
+                <p className="text-white text-3xl font-bel uppercase mt-4 lg:mt-0 lg:text-left">
                   {isFetched ? data.destinations[renderId].distance : null}
                 </p>
               </div>
-              <div className="flex flex-col ml-16 mt-6">
+              <div className="flex flex-col lg:ml-16 mt-6">
                 <p className="text-white uppercase text-sm font-bel">
                   est. travel time
                 </p>
-                <p className="text-white text-3xl font-bel uppercase text-left">
+                <p className="text-white text-3xl font-bel uppercase mt-4 lg:mt-0 lg:text-left">
                   {isFetched ? data.destinations[renderId].travel : null}
                 </p>
               </div>
