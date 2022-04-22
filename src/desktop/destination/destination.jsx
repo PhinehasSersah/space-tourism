@@ -35,20 +35,19 @@ const Destination = () => {
     setRenderId(index);
     target.style.borderBottom = "2px solid white";
     const siblings = [...parent.children].filter((child) => child !== target);
-    siblings.forEach((child) => child.style.borderBottom = "none");
+    siblings.forEach((child) => (child.style.borderBottom = "none"));
   };
-  
 
   return (
     <>
       <div
-        className="flex flex-col w-screen h-mob sm:h-tab  bg-cover bg-center "
+        className="flex flex-col w-screen h-mob sm:h-tab lg:h-screen bg-cover bg-center "
         style={{ backgroundImage: `url(${background})` }}
       >
         <Header />
         <div className="flex flex-col lg:justify-evenly lg:flex-row ">
           <div className="flex flex-col lg:w-1/3 lg:mt-36 mt-40 h-40 ">
-            <h1 className=" lg:text-2xl sm:text-xl font-barC text-white lg:mb-20 uppercase tracking-widest  lg:mr-56 ">
+            <h1 className="lg:text-2xl sm:text-xl sm:text-left sm:ml-12 lg:ml-0 lg:text-center font-barC text-white lg:mb-20 uppercase tracking-widest lg:tracking-wider lg:mr-56 ">
               {" "}
               <span className="text-faded mr-3 font-bold">01</span> pick your
               destination
@@ -62,14 +61,14 @@ const Destination = () => {
 
           <div className="lg:w-1/3 lg:mt-36 lg:h-4/5 ">
             <nav className=" mt-24 sm:mt-56 lg:mt-0 h-7 lg:h-10  mx-auto">
-              <ul
-                className="flex h-full w-80 lg:w-96 mx-auto  lg:mt-16"
-              >
+              <ul className="flex h-full w-80 lg:w-96 mx-auto  lg:mt-16">
                 {titles &&
                   titles.map((title, index) => (
                     <li
                       onClick={changeRenderId}
-                      className= { `${index === 0 ? 'border-b-2 border-white ' : ''}text-white cursor-pointer  uppercase px-3 lg:mx-0 lg:mr-9  font-bel` }
+                      className={`${
+                        index === 0 ? "border-b-2 border-white " : ""
+                      }text-white cursor-pointer  uppercase px-3 lg:mx-0 lg:mr-9  font-bel`}
                       key={index}
                     >
                       {title}

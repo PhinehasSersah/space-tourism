@@ -19,16 +19,18 @@ module.exports = {
 
     letterSpacing: {
       widest: '.34em',
-      wider: '.1.5em',
+      wider: '.11em',
     },
 
     extend: {
       width: {
         'circle': '230px',
+        'w-tab': '30rem',
       },
       height: {
         'mob': '130vh',
         'tab': '120vh',
+        'h-tab': '30rem',
       },
       spacing: {
         circh: '230px',
