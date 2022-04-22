@@ -53,15 +53,15 @@ const Technology = () => {
       >
         <Header />
         <div className="flex flex-col">
-          <h1 className="lg:text-2xl text-center mx-auto w-72 lg:ml-56 mt-44 lg:text-left font-barC text-white lg:tracking-wider uppercase tracking-widest">
+          <h1 className="lg:text-2xl text-center sm:ml-10 sm:text-xl mx-auto w-72 lg:ml-56 mt-44 lg:text-left font-barC text-white lg:tracking-wider uppercase tracking-widest">
             {" "}
             <span className="text-faded mr-3 font-bold">03</span> space launch
             101
           </h1>
           <div className="flex flex-col lg:flex-row-reverse lg:justify-between lg:relative ">
-            <div className="flex mx-auto mt-12 lg:flex-col w-screen h-60 lg:h-5/6 lg:w-2/5 ">
+            <div className="flex mx-auto mt-12 lg:flex-col w-screen sm:w-full h-60 lg:h-5/6 lg:w-2/5 lg:ml-40">
               <img
-                className="lg:w-4/5 w  object-cover block mx-auto"
+                className="lg:w-tech-width lg:h-tech-img object-cover sm:w-screen sm:h-80 block mx-auto"
                 src={images[renderId]}
                 alt="crew pictures"
               />
@@ -70,16 +70,16 @@ const Technology = () => {
 
 
 
-            <div className="mt-36 lg:ml-56 flex flex-col-reverse lg:flex-row-reverse  ">
+            <div className="mt-36 lg:ml-56 flex flex-col-reverse lg:flex-row-reverse ">
 
-              <div className=" mt-8 lg:ml-32 w-96 mx-auto">
-                <h2 className="font-barC text-sm text-white text-center lg:text-left tracking-widest uppercase ">
+              <div className=" mt-8 lg:mt-0 lg:ml-12 w-96 mx-auto">
+                <h2 className="font-barC text-sm sm:text-base text-white text-center lg:text-left tracking-widest uppercase ">
                   the terminology...
                 </h2>
-                <h1 className="font-bel text-2xl lg:text-5xl text-white mt-6 lg:text-left tracking-widest uppercase mx-auto">
+                <h1 className="font-bel text-2xl sm:text-4xl lg:text-5xl sm:w-max sm:text-center text-white mt-6 lg:mt-3 lg:text-left sm:tracking-wider tracking-widest uppercase mx-auto">
                   {isFetched ? data.technology[renderId].name : null}
                 </h1>
-                <p className="text-white mt-8 w-96 h-48 font-bar lg:text-left text-base lg:text-xl">
+                <p className="text-white mt-8 w-96 h-48 font-bar lg:text-left text-base sm:text-base lg:text-lg">
                   {isFetched ? data.technology[renderId].description : null}
                 </p>
               </div>

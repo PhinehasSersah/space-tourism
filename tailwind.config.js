@@ -26,11 +26,13 @@ module.exports = {
       width: {
         'circle': '230px',
         'w-tab': '30rem',
+        'tech-width': '28rem',
       },
       height: {
-        'mob': '130vh',
-        'tab': '120vh',
+        'mob': '70rem',
+        'tab': '70rem',
         'h-tab': '30rem',
+        'tech-img': '30rem',
       },
       spacing: {
         circh: '230px',

@@ -57,7 +57,7 @@ const Crew = () => {
 
           <div className="flex flex-col-reverse sm:flex-col items-center justify-center lg:block lg:w-5/12 mt-24 lg:ml-16 lg:mt-64">
             <div className="w-fit mx-auto mt-9 sm:mt-20 lg:-mt-10 ">
-              <h1 className="absolute top-28 sm:left-10 left-40 lg:left-72 leading-5 text-base sm:text-xl sm:block lg:text-2xl w-56 sm:w-64 sm:text-left font-barC mt-16 text-white uppercase tracking-widest lg:tracking-wider text-center mr-56 ">
+              <h1 className="absolute top-28 sm:left-10 left-1/4  lg:left-72 leading-5 text-base sm:text-xl sm:block lg:text-2xl w-56 sm:w-64 sm:text-left font-barC mt-16 text-white uppercase tracking-widest lg:tracking-wider text-center mr-56 ">
                 {" "}
                 <span className="text-faded mr-3  font-bold">02</span>meet your
                 crew
