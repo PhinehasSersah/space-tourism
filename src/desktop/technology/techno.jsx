@@ -48,26 +48,29 @@ const Technology = () => {
   return (
     <>
       <div
-        className="flex flex-col w-screen h-screen bg-cover bg-center "
+        className="flex flex-col w-screen h-mob sm:h-tab lg:h-screen bg-cover bg-center "
         style={{ backgroundImage: `url(${background})` }}
       >
         <Header />
         <div className="flex flex-col">
-          <h1 className="text-2xl w-72 ml-56 mt-44 text-left font-barC text-white  uppercase tracking-widest">
+          <h1 className="lg:text-2xl text-center mx-auto w-72 lg:ml-56 mt-44 lg:text-left font-barC text-white lg:tracking-wider uppercase tracking-widest">
             {" "}
             <span className="text-faded mr-3 font-bold">03</span> space launch
             101
           </h1>
-          <div className="flex  flex-row-reverse justify-between relative ">
-            <div className="flex flex-col h-5/6 w-2/5">
+          <div className="flex flex-col lg:flex-row-reverse lg:justify-between lg:relative ">
+            <div className="flex mx-auto mt-12 lg:flex-col w-screen h-60 lg:h-5/6 lg:w-2/5 ">
               <img
-                className="w-4/5 transition-opacity mt-2 block mx-auto"
+                className="lg:w-4/5 w-full  object-cover block mx-auto"
                 src={images[renderId]}
                 alt="crew pictures"
               />
             </div>
 
-            <div className="w-5/12 mt-36 ml-56 flex flex-row-reverse ">
+
+
+
+            <div className="w-5/12 mt-36 ml-56 flex flex-col-reverse lg:flex-row-reverse ">
               <div className="ml-32 w-full">
                 <h2 className="font-bar text-sm text-white text-left tracking-widest uppercase ">
                   the terminology...
@@ -79,7 +82,7 @@ const Technology = () => {
                   {isFetched ? data.technology[renderId].description : null}
                 </p>
               </div>
-              <div className="h-80 w-36 flex flex-col justify-evenly">
+              <div className="lg:h-80 lg:w-36 -mt-12 flex lg:flex-col justify-evenly">
                 <div className="w-16 h-16 bg-white border-2 border-faded rounded-full cursor-pointer">
                   <h1
                     onClick={changeRenderId}
