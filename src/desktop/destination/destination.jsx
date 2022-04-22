@@ -76,7 +76,7 @@ const Destination = () => {
                   ))}
               </ul>
             </nav>
-            <h1 className="font-bel text-6xl lg:text-8xl text-white mt-10 lg:mt-12 lg:tracking-widest uppercase ">
+            <h1 className="font-bel text-6xl lg:text-8xl text-white mt-10 lg:mt-12 lg:tracking-wider lg:text-left lg:ml-16 uppercase ">
               {isFetched ? data.destinations[renderId].name : null}
             </h1>
             <p className="text-lightblue mt-12 w-96 font-bar text-base lg:text-xl text-left mx-auto">

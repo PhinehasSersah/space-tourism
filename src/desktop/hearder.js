@@ -10,13 +10,14 @@ const Header = () => {
     setActive(prev => !prev);
   }
   return (
-    <header className="w-screen sm:h-12 h-12 absolute flex items-center sm:justify-between bg-blend-screen mt-8">
-      <div className="w-12 h-12 bg-white rounded-full ml-8">
+    <header className="w-screen flex
+     justify-between bg-blend-screen py-4 px-8">
+      <div className="w-12 h-12 bg-white rounded-full border-2">
         <img alt="header logo" src={logo} />
       </div>
       <div className=" hidden lg:inline-block w-3/12 absolute left-36 bg-white opacity-25 h-px ml-8 z-auto"></div>
-      <nav className="bg-transparent sm:bg-backg backdrop-opacity-10 h-14 w-8/12 items-center relative md:float-right">
-        <button onClick={handleToggle} className="flex float-right mt-5 sm:hidden  text-white">
+      <nav className=" sm:bg-backg backdrop-opacity-10 w-8/12 relative flex justify-end">
+        <button onClick={handleToggle} className="sm:hidden  text-white">
           <GiHamburgerMenu size={40} />
         </button>
 
