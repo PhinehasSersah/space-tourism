@@ -37,8 +37,10 @@ const Technology = () => {
     let parentSiblings = [...gParent.children].filter(
       (child) => child !== parent
     );
-    parentSiblings.forEach(child => child.style.backgroundColor = "black");
-    parentSiblings.forEach(child =>child.children[0].style.color = "white");
+    parentSiblings.forEach((child) => (child.style.backgroundColor = "black"));
+    parentSiblings.forEach(
+      (child) => (child.children[0].style.color = "white")
+    );
   };
 
   return (
@@ -63,11 +65,7 @@ const Technology = () => {
               />
             </div>
 
-
-
-
             <div className="mt-10 lg:ml-56 flex flex-col-reverse lg:flex-row-reverse lg:h-96 ">
-
               <div className=" mt-8 lg:mt-0 lg:ml-12 w-96 mx-auto">
                 <h2 className="font-barC text-sm sm:text-base text-white text-center lg:text-left tracking-widest uppercase ">
                   the terminology...
@@ -79,8 +77,6 @@ const Technology = () => {
                   {isFetched ? data.technology[renderId].description : null}
                 </p>
               </div>
-
-
 
               <div className="lg:h-80 lg:w-36 mx-auto sm:mt-24 lg:mt-0 flex lg:flex-col justify-evenly">
                 <div className="w-16 h-16 bg-white border-2 mx-2 border-faded rounded-full cursor-pointer">
