@@ -15,7 +15,7 @@ const Header = () => {
       <div className="w-12 h-12 bg-white rounded-full border-2">
         <img alt="header logo" src={logo} />
       </div>
-      <div className=" hidden lg:inline-block w-3/12 absolute left-36 bg-white opacity-25 h-px ml-8 z-auto"></div>
+      <div className=" hidden lg:inline-block w-3/12 absolute left-36 top-11 bg-white opacity-25 h-px ml-8 z-auto"></div>
       <nav className=" sm:bg-backg backdrop-opacity-10 w-8/12 relative flex justify-end">
         <button onClick={handleToggle} className="sm:hidden  text-white">
           <GiHamburgerMenu size={40} />

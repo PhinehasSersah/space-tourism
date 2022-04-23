@@ -37,12 +37,8 @@ const Technology = () => {
     let parentSiblings = [...gParent.children].filter(
       (child) => child !== parent
     );
-    parentSiblings.forEach((child) => {
-      return (child.style.backgroundColor = "black");
-    });
-    parentSiblings.forEach((child) => {
-      return (child.children[0].style.color = "white");
-    });
+    parentSiblings.forEach(child => child.style.backgroundColor = "black");
+    parentSiblings.forEach(child =>child.children[0].style.color = "white");
   };
 
   return (
@@ -53,13 +49,13 @@ const Technology = () => {
       >
         <Header />
         <div className="flex flex-col">
-          <h1 className="lg:text-2xl text-center sm:ml-10 sm:text-xl mx-auto w-72 lg:ml-56 mt-44 lg:text-left font-barC text-white lg:tracking-wider uppercase tracking-widest">
+          <h1 className="lg:text-2xl text-center sm:ml-10 sm:text-xl mx-auto w-72 lg:ml-56 mt-36 lg:mt-14 lg:text-left font-barC text-white lg:tracking-wider uppercase tracking-widest">
             {" "}
             <span className="text-faded mr-3 font-bold">03</span> space launch
             101
           </h1>
           <div className="flex flex-col lg:flex-row-reverse lg:justify-between lg:relative ">
-            <div className="flex mx-auto mt-12 lg:flex-col w-screen sm:w-full h-60 lg:h-5/6 lg:w-2/5 lg:ml-40">
+            <div className="flex mx-auto mt-8 lg:flex-col w-screen sm:w-full h-60 lg:h-5/6 lg:w-2/5 lg:ml-40">
               <img
                 className="lg:w-tech-width lg:h-tech-img object-cover sm:w-screen sm:h-80 block mx-auto"
                 src={images[renderId]}
@@ -70,7 +66,7 @@ const Technology = () => {
 
 
 
-            <div className="mt-36 lg:ml-56 flex flex-col-reverse lg:flex-row-reverse ">
+            <div className="mt-10 lg:ml-56 flex flex-col-reverse lg:flex-row-reverse lg:h-96 ">
 
               <div className=" mt-8 lg:mt-0 lg:ml-12 w-96 mx-auto">
                 <h2 className="font-barC text-sm sm:text-base text-white text-center lg:text-left tracking-widest uppercase ">
@@ -86,7 +82,7 @@ const Technology = () => {
 
 
 
-              <div className="lg:h-80 lg:w-36 mx-auto -mt-12 flex lg:flex-col justify-evenly">
+              <div className="lg:h-80 lg:w-36 mx-auto sm:mt-24 lg:mt-0 flex lg:flex-col justify-evenly">
                 <div className="w-16 h-16 bg-white border-2 mx-2 border-faded rounded-full cursor-pointer">
                   <h1
                     onClick={changeRenderId}

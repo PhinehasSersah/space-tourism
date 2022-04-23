@@ -29,10 +29,11 @@ module.exports = {
         'tech-width': '28rem',
       },
       height: {
-        'mob': '70rem',
-        'tab': '70rem',
+        'mob': '75rem',
+        'tab': '75rem',
         'h-tab': '30rem',
-        'tech-img': '30rem',
+        'tech-img': '27rem',
+        'lscreen': '120vh',
       },
       spacing: {
         circh: '230px',

@@ -46,22 +46,22 @@ const Destination = () => {
       >
         <Header />
         <div className="flex flex-col lg:justify-evenly lg:flex-row ">
-          <div className="flex flex-col lg:w-1/3 lg:mt-36 mt-40 h-40 ">
-            <h1 className="lg:text-2xl sm:text-xl sm:text-left sm:ml-12 lg:ml-0 lg:text-center font-barC text-white lg:mb-20 uppercase tracking-widest lg:tracking-wider lg:mr-56 ">
+          <div className="flex flex-col lg:w-1/3 lg:mt-16 mt-28 ">
+            <h1 className="lg:text-2xl sm:text-xl sm:text-left sm:ml-12 lg:ml-0 lg:text-center font-barC text-white lg:mb-20 uppercase tracking-widest lg:tracking-wider lg:mr-56 lg:w-96">
               {" "}
               <span className="text-faded mr-3 font-bold">01</span> pick your
               destination
             </h1>
             <img
-              className="mt-8 lg:mt-0 w-44 h-44 sm:w-72 sm:h-72 lg:w-96 lg:h-96 block mx-auto "
+              className="mt-8 lg:-mt-10 w-44 h-44 sm:w-72 sm:h-72 lg:w-96 lg:h-96 block mx-auto "
               src={images[renderId]}
               alt="gallaxy pictures"
             />
           </div>
 
-          <div className="lg:w-1/3 lg:mt-36 lg:h-4/5 ">
+          <div className="lg:w-1/3 lg:h-4/5 ">
             <nav className=" mt-24 sm:mt-56 lg:mt-0 h-7 lg:h-10  mx-auto">
-              <ul className="flex h-full w-80 lg:w-96 mx-auto  lg:mt-16">
+              <ul className="flex h-full w-80 lg:w-96 mx-auto  lg:mt-8">
                 {titles &&
                   titles.map((title, index) => (
                     <li

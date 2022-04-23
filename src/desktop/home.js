@@ -19,7 +19,7 @@ const Home = () => {
                 style={{ backgroundImage: `url(${windowSize < 800 ? images[1]: images[0]})` }}
             >
                 <Header />
-                <div className=" flex flex-col align-middle justify-center relative top-40 lg:flex-row lg:justify-evenly lg:items-end h-3/4 sm:flex-col">
+                <div className=" flex flex-col align-middle justify-center relative top-16 lg:flex-row lg:justify-evenly lg:items-end h-3/4 sm:flex-col">
                     <div className=" flex flex-col h-72 sm:w-2/3 sm:h-80 sm:mx-auto lg:mx-0 lg:mb-20">
                         <p className=" uppercase  text-sm lg:text-lg lg:mr-16 font-barC tracking-widest text-white">so, you want to travel to</p><br />
                         <span className="font-bel text-6xl sm:text-8xl lg:text-9xl text-white uppercase leading-tight"> space</span><br />
