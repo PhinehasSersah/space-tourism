@@ -54,14 +54,14 @@ const Destination = () => {
               destination
             </h1>
             <img
-              className="mt-8 lg:-mt-10 w-44 h-44 sm:w-72 sm:h-72 lg:w-96 lg:h-96 block mx-auto "
+              className="mt-8 lg:-mt-10 w-44 h-44 sm:w-96 sm:h-96 lg:w-96 lg:h-96 block mx-auto "
               src={images[renderId]}
               alt="gallaxy pictures"
             />
           </div>
 
           <div className="lg:w-1/3 lg:h-4/5 ">
-            <nav className=" mt-24 sm:mt-56 lg:mt-0 h-7 lg:h-10  mx-auto">
+            <nav className=" mt-24 sm:mt-28 lg:mt-0 h-7 lg:h-10  mx-auto">
               <ul className="flex h-full w-80 lg:w-96 mx-auto  lg:mt-8">
                 {titles &&
                   titles.map((title, index) => (
@@ -103,7 +103,7 @@ const Destination = () => {
             </div>
           </div>
         </div>
-        <div className="mt-36 sm:mt-0 lg:mt-16 big:mt-0">
+        <div className="mt-32 sm:-mt-8 lg:mt-10 big:mt-0">
         <Footer />
         </div>
       </div>

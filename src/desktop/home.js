@@ -32,7 +32,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="">
+                <div className="-mt-5">
                     <Footer />
                 </div>
 

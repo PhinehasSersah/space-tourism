@@ -93,7 +93,7 @@ const Crew = () => {
             </div>
           </div>
         </div>
-        <div className="-mt-12 sm:mt-48 lg:mt-3 ">
+        <div className="-mt-20 sm:mt-48 lg:-mt-3 ">
         <Footer />
         </div>
       </div>

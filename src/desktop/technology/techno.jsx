@@ -108,7 +108,7 @@ const Technology = () => {
             </div>
           </div>
         </div>
-        <div className="mt-36 sm:mt-24 lg:mt-4">
+        <div className="mt-28 sm:mt-16 lg:-mt-2">
         <Footer />
         </div>
       </div>
