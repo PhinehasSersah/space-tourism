@@ -5,6 +5,7 @@ import background from "./background-destination-desktop.jpg";
 import titan from "./image-titan.png";
 import mars from "./image-mars.png";
 import europa from "./image-europa.png";
+import Footer from "../footer";
 
 const Destination = () => {
   const [data, setData] = useState([]);
@@ -41,12 +42,12 @@ const Destination = () => {
   return (
     <>
       <div
-        className="flex flex-col w-screen h-mob sm:h-tab lg:h-screen bg-cover bg-center "
+        className="flex flex-col w-screen h-mob sm:h-tab lg:h-screen bg-cover bg-center lg:overflow-hidden "
         style={{ backgroundImage: `url(${background})` }}
       >
         <Header />
         <div className="flex flex-col lg:justify-evenly lg:flex-row ">
-          <div className="flex flex-col lg:w-1/3 lg:mt-16 mt-28 ">
+          <div className="flex flex-col lg:w-1/3 lg:mt-12 mt-28 ">
             <h1 className="lg:text-2xl sm:text-xl sm:text-left sm:ml-12 lg:ml-0 lg:text-center font-barC text-white lg:mb-20 uppercase tracking-widest lg:tracking-wider lg:mr-56 lg:w-96">
               {" "}
               <span className="text-faded mr-3 font-bold">01</span> pick your
@@ -76,10 +77,10 @@ const Destination = () => {
                   ))}
               </ul>
             </nav>
-            <h1 className="font-bel text-6xl lg:text-8xl text-white mt-10 lg:mt-12 lg:tracking-wider lg:text-left lg:ml-16 uppercase ">
+            <h1 className="font-bel text-6xl lg:text-8xl text-white mt-10 lg:mt-4 lg:tracking-wider lg:text-left lg:ml-16 uppercase ">
               {isFetched ? data.destinations[renderId].name : null}
             </h1>
-            <p className="text-lightblue mt-12 w-96 font-bar text-base lg:text-xl text-left mx-auto">
+            <p className="text-lightblue mt-12 lg:mt-4 w-96 font-bar text-base lg:text-xl text-left mx-auto px-6 sm:px-0">
               {isFetched ? data.destinations[renderId].description : null}
             </p>
             <div className="h-24 w-96 flex flex-col items-center sm:flex-row justify-center sm:justify-evenly lg:justify-start mt-12 border-t-2 mx-auto border-hr">
@@ -101,6 +102,9 @@ const Destination = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="mt-36 sm:mt-0 lg:mt-16 big:mt-0">
+        <Footer />
         </div>
       </div>
     </>

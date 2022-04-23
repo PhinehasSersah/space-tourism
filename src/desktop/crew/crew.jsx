@@ -6,6 +6,7 @@ import background from "./background-crew-desktop.jpg";
 import douglas from "./image-douglas-hurley.png";
 import mark from "./image-mark-shuttleworth.png";
 import victor from "./image-victor-glover.png";
+import Footer from "../footer";
 
 const Crew = () => {
   const [data, setData] = useState([]);
@@ -26,8 +27,7 @@ const Crew = () => {
     fetchData();
   }, [isFetched]);
 
-  // function to get index of moon, mars, europa, titan
-
+  // function to toggle between crews;
   const changeRenderId = (event) => {
     let target = event.target;
     let parent = target.parentNode;
@@ -69,7 +69,7 @@ const Crew = () => {
               <h1 className="font-bel text-2xl sm:text-4xl lg:text-5xl text-white mt-10 sm:mt-5 lg:mt-6 text-center lg:text-left  uppercase mx-auto bg" >
                 {isFetched ? data.crew[renderId].name : null}
               </h1>
-              <p className="text-white mt-16 sm:mt-7 lg:mt-5 w-96 h-48 font-bar text-left text-base leading-6 lg:text-lg">
+              <p className="text-white mt-16 sm:mt-7 lg:mt-5 w-96 h-48 font-bar text-left text-base leading-6 lg:text-lg px-2 sm:px-0">
                 {isFetched ? data.crew[renderId].bio : null}
               </p>
             </div>
@@ -92,6 +92,9 @@ const Crew = () => {
               ></div>
             </div>
           </div>
+        </div>
+        <div className="-mt-12 sm:mt-48 lg:mt-3 ">
+        <Footer />
         </div>
       </div>
     </>

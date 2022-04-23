@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from "react";
+import Footer from "../footer";
 import Header from "../hearder";
 import background from "./background-technology-desktop.jpg";
 import launch from "./image-launch-vehicle-portrait.jpg";
@@ -106,6 +107,9 @@ const Technology = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="mt-36 sm:mt-24 lg:mt-4">
+        <Footer />
         </div>
       </div>
     </>

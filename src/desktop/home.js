@@ -2,9 +2,9 @@ import { React, useEffect, useState } from "react";
 import backgroud from "./background-home-desktop.jpg"
 import tabletBackground from "./background-home-tablet.jpg"
 import Header from "./hearder";
+import Footer from './footer'
 
 const Home = () => {
-    const [renderImage, setRenderImage] = useState(0);
     const [windowSize, setWindowSize] = useState(window.innerWidth);
     const images = [backgroud, tabletBackground];
 
@@ -16,7 +16,7 @@ const Home = () => {
     return (
         <>
             <div className="flex flex-col w-screen h-screen  bg-cover bg-center"
-                style={{ backgroundImage: `url(${windowSize < 800 ? images[1]: images[0]})` }}
+                style={{ backgroundImage: `url(${windowSize < 800 ? images[1] : images[0]})` }}
             >
                 <Header />
                 <div className=" flex flex-col align-middle justify-center relative top-16 lg:flex-row lg:justify-evenly lg:items-end h-3/4 sm:flex-col">
@@ -31,6 +31,9 @@ const Home = () => {
                             <p className="text-center  text-dark font-bel text-xl  uppercase">explore</p>
                         </div>
                     </div>
+                </div>
+                <div className="">
+                    <Footer />
                 </div>
 
             </div>

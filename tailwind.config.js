@@ -30,14 +30,17 @@ module.exports = {
       },
       height: {
         'mob': '75rem',
-        'tab': '75rem',
+        'tab': '80rem',
         'h-tab': '30rem',
         'tech-img': '27rem',
         'lscreen': '120vh',
       },
       spacing: {
         circh: '230px',
-      }
+      },
+      screens: {
+        'big': '1540px',
+      },
     },
     plugins: [],
   },
